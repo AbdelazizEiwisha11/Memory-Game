@@ -1,0 +1,137 @@
+body{font-family: 'Segoe UI';}
+/* Start loading  */
+#loading, .endGame{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+#loading{
+    background-color: #427396e6;
+}
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+.spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }  20% { 
+        -webkit-transform: scaleY(1.0);
+        transform: scaleY(1.0);
+    }
+}
+button{
+    display: none;
+}
+/* End loading  */
+
+/* Start Game Blocks */
+.head-cont{
+    width: 1140px;
+    margin: 0 auto;
+}
+.head-cont , .gameBlock{
+    border: 4px solid #2196f3;
+}
+.blocksContainer{
+    width: 1160px;
+    margin: 0 auto;
+}
+.blocksContainer.noClicking{
+    pointer-events: none;
+}
+.gameBlock{
+    height: 180px;
+    flex: 1 0 200px;
+    margin: 0 10px 20px;
+    position: relative;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.front{
+    background-color: #333;
+}
+.front::before{
+    content: '?';
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bold;
+}
+.back{
+    background-color: #f6f6f6;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.isFlipped, .hasMathed{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+/* Eng Gmame Blocks */
+
+/* Start End Game */
+.endGame{
+    background-color:  hsl(0, 0%, 88%,0.8);
+    display: none;
+}
+.endGame > div{
+    background-color:  hsl(0, 0%, 93%, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+.success{
+    width: 200px;
+    text-align: center;
+}
+/* End End Game */

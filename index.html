@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Loading  -->
+    <section id="loading" class="d-flex justify-content-center align-items-center">
+        <div>
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+            <button class="startBtn btn-lg btn-danger ">Start Game</button> 
+        </div>
+    </section>
+    <!-- End Loading  -->
+
+    <!-- Start Header -->
+    <header class=" mt-3">
+        <div class=" head-cont py-3 px-3 fw-bold">
+            <div class="d-flex justify-content-between ">
+                <div class="col-md-6 ">
+                    <div class="name">Hello: <span class="text-danger"></span></div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="tries ">Wrong Tries: <span class="text-danger">0</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Start Header -->
+
+    <!-- Start Game Blocks  -->
+    <section class="blocks mt-3">
+        <div class="d-flex flex-wrap blocksContainer text-center">
+            
+                <div class="gameBlock" data-tecnology="angular">
+                    <div class=" face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-angular fa-8x text-danger"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="angular">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-angular fa-8x text-danger"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="react">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-react fa-8x text-info"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="react">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-react fa-8x text-info"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="vue.js">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-vuejs fa-8x text-success"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="vue.js">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-vuejs fa-8x text-success"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-css3 fa-8x text-primary"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-css3 fa-8x text-primary"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-github-square fa-8x text-black"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-github-square fa-8x text-black"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="gulpjs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-gulp fa-8x text-warning"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="gulpjs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-gulp fa-8x text-warning"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-html5 fa-8x text-danger"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-html5 fa-8x text-danger"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="java">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-java fa-8x text-primary"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="java">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-java fa-8x text-primary"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="python">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-python fa-8x text-warning"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="python">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-python fa-8x text-warning"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="laravel">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-laravel fa-8x text-danger"></i>
+                    </div>
+                </div>
+            
+                <div class="gameBlock" data-tecnology="laravel">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <i class="fa-brands fa-laravel fa-8x text-danger"></i>
+                    </div>
+                </div>
+        </div>
+        <!-- Start Sounds -->
+        <audio id="success" src="Sounds/success-sound-effect.mp3" preload="auto"></audio>
+        <audio id="fail" src="Sounds/Game-fail-sound-effect.mp3"  preload="auto"></audio>
+    </section>
+    <!-- End Game Blocks  -->
+
+    <!-- Start End Game -->
+    <div class="endGame ">
+        <div class="p-5 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="success text-success fs-1 mb-4">success </h2>
+            <p class="text-success fs-4 mb-4"> Do You Want Play Again ?</p>
+            <button class="successBtn btn btn-outline-success btn-lg">yes</button>
+        </div>
+    </div>
+    <!-- End End Game -->
+
+    <!-- Start Js Scripts -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
